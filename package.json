@@ -48,5 +48,30 @@
   },
   "engines": {
     "node": ">=12"
-  }
+  },
+  
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mohammad128/vue3-tab.git"
+  },
+  "keywords": [
+    "Javascript",
+    "Vue",
+    "Vue3",
+    "Tab",
+    "Vue Tab",
+    "Vue3 Tab",
+    "Tab Switcher",
+    "Tab3 Switcher",
+    "Telegram Tab",
+    "Vue Telegram Tab",
+    "Vue3 Telegram Tab",
+    "Vue Tab Switcher"
+  ],
+  "author": "MohammadJavadi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mohammad128/vue3-tab/issues"
+  },
+  "homepage": "https://github.com/mohammad128/vue3-tab#readme"
 }
