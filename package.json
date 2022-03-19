@@ -1,6 +1,6 @@
 {
   "name": "vue3-tab",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Vue 3 Tab",
   "main": "dist/vue3-tab.ssr.js",
   "browser": "dist/vue3-tab.esm.js",
@@ -49,7 +49,6 @@
   "engines": {
     "node": ">=12"
   },
-  
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mohammad128/vue3-tab.git"
