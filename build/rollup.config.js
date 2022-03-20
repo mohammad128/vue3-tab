@@ -11,6 +11,12 @@ import PostCSS from 'rollup-plugin-postcss';
 import { terser } from 'rollup-plugin-terser';
 import minimist from 'minimist';
 
+import globalStyles from 'rollup-plugin-vue-global-styles'
+
+const patterns = ['./src/**/style.css']
+ 
+
+
 // Get browserslist config and remove ie from es build targets
 const esbrowserslist = fs.readFileSync('./.browserslistrc')
   .toString()
@@ -95,6 +101,7 @@ if (!argv.format || argv.format === 'es') {
       exports: 'named',
     },
     plugins: [
+      globalStyles({ patterns }),
       replace(baseConfig.plugins.replace),
       ...baseConfig.plugins.preVue,
       vue(baseConfig.plugins.vue),
