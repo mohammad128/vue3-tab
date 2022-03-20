@@ -20,10 +20,10 @@ app.use(Vue3Tab);
 ```javascript
 
 <Tab>
-	<TabItem title="`Tab1`"  active>
+	<TabItem title="Tab1"  active>
 		<p >Tab1 Content</p>
 	</TabItem> 
-	<TabItem title="`Tab2`" >
+	<TabItem title="Tab2" >
 		<p >Tab2 Content</p>
 	</TabItem> 
 </Tab>
@@ -33,10 +33,10 @@ app.use(Vue3Tab);
 ```javascript
 
 <Tab lazy-load>
-	<TabItem title="`Tab1`"  active>
+	<TabItem title="Tab1"  active>
 		<p >Tab1 Content</p>
 	</TabItem> 
-	<TabItem title="`Tab2`" >
+	<TabItem title="Tab2" >
 		<p >Tab2 Content</p>
 	</TabItem> 
 </Tab>

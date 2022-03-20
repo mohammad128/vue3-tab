@@ -1,6 +1,7 @@
 
 // Import vue components
 import * as components from '@/lib-components/index';
+import '@/lib-components/style.css';
 import VWave from 'v-wave'
 
 // install function executed by Vue.use()
