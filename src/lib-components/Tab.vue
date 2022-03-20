@@ -97,7 +97,9 @@ export default {
 }
 </script>
 
-<style scoped>
+<style >
+@import './style.css';
+
 .tabs-container,
 .tab-header {
     scroll-behavior: smooth;
