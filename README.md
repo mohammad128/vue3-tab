@@ -28,4 +28,16 @@ app.use(Vue3Tab);
 	</TabItem> 
 </Tab>
 ```
+### or 
 
+```javascript
+
+<Tab lazy-load>
+	<TabItem title="`Tab1`"  active>
+		<p >Tab1 Content</p>
+	</TabItem> 
+	<TabItem title="`Tab2`" >
+		<p >Tab2 Content</p>
+	</TabItem> 
+</Tab>
+```
