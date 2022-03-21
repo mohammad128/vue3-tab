@@ -45,7 +45,7 @@ const baseConfig = {
     },
     postVue: [
       resolve({
-        extensions: ['.js', '.jsx', '.ts', '.tsx', '.vue'],
+        extensions: ['.js', '.jsx', '.ts', '.tsx', '.vue', '.css'],
       }),
       // Process only `<style module>` blocks.
       PostCSS({
@@ -53,7 +53,6 @@ const baseConfig = {
           generateScopedName: '[local]___[hash:base64:5]',
         },
         include: /&module=.*\.css$/,
-        extract: '../src/lib-components/styles.css'
       }),
       // Process all `<style>` blocks except `<style module>`.
       PostCSS({ include: /(?<!&module=.*)\.css$/ }),
@@ -167,6 +166,26 @@ if (!argv.format || argv.format === 'iife') {
   };
   buildFormats.push(unpkgConfig);
 }
+
+const cssOnlyConfig = {
+  input: 'src/lib-components/style.css',
+  output: {
+    file: 'dist/style.css',
+    format: 'es',
+    exports: 'default'
+  },
+  plugins: [
+    PostCSS({
+      modules: false,
+      extract: true
+    }),
+    vue({
+      css:true,
+    }),
+  ],
+};
+buildFormats.push(cssOnlyConfig);
+
 
 // Export config
 export default buildFormats;
